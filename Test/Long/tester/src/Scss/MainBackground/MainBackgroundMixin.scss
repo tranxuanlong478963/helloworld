@@ -1,0 +1,10 @@
+@use '../Mixin.scss' as *;
+@mixin containerOfTextAndIcon($left,$top){
+    @include dynamicBackground(#FAFCFF,15.5%,29.9%);
+    //W 13.5%
+    @include staticLocation($left,$top,0,0);
+    border-bottom: 0.5px solid #eae6df;
+    display: inline-block;
+    //1.6%
+    //top 38%
+}

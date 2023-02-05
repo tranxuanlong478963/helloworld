@@ -1,0 +1,108 @@
+@use '../Mixin.scss' as *;
+
+
+@media only screen and (max-width:1200px) {
+    .containerIconText1 {
+        width: 67.625px;
+        height: 26.8125px;
+    }
+}
+//iconText
+@media only screen and (max-width:986px){
+    .addPosition2{
+        top:-100%;
+        left: 0%;
+    }
+}
+@media only screen and (max-width:952px){
+    .addPosition1{
+        top:0%;
+        left: 0%;
+    }
+    .addPosition2{
+        top:0%;
+        left: 0%;
+    }
+}
+//button 
+@media only screen and (max-width:735px){
+    .SCButton1{
+        top:-618%;
+    }
+}
+//small
+@media only screen and (max-width:1195px) {
+    .textImageSCDiv1 {
+        top: -20.66%;
+    }
+    .textImageSCDiv2 {
+        top: -23.059%;
+    }
+}
+
+//big
+@media only screen and (max-width:1083px) {
+    .textImageSCDiv1 {
+        top: -19.58%;
+    }
+    .textImageSCDiv2 {
+        top: -22.009%;
+    }
+}
+
+//big
+@media only screen and (max-width:830px) {
+    .textImageSCDiv1 {
+        top: -18.5%;
+    }
+    .textImageSCDiv2 {
+        top: -20.919%;
+    }
+}
+
+//small
+@media only screen and (max-width:822px) {
+    .textImageSCDiv1 {
+        top: -17.66%;
+    }
+    .textImageSCDiv2 {
+        top: -20.039%;
+    }
+}
+@media only screen and (max-width:737px) {
+    .textImageSCDiv1 {
+        text-align: center;
+    }
+    .textImageSCDiv2 {
+        text-align: center;
+    }
+}
+//big
+@media only screen and (max-width:657px) {
+    .textImageSCDiv1 {
+        top: -16.58%;
+    }
+    .textImageSCDiv2 {
+        top: -18.95%;
+    }
+}
+
+//small
+@media only screen and (max-width:649px) {
+    .textImageSCDiv1 {
+        top: -15.74%;
+    }
+    .textImageSCDiv2 {
+        top: -18.009%;
+    }
+}
+
+//big
+@media only screen and (max-width:589px) {
+    .textImageSCDiv1 {
+        top: -14.66%;
+    }
+    .textImageSCDiv2 {
+        top: -17.05%;
+    }
+}

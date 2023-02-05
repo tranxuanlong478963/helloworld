@@ -1,0 +1,82 @@
+@use "./Mixin" as *;
+@import "./Variable.scss";
+$length: 6917px;
+.bodyPage{
+    @include dynamicBackground(green, 100%, 3956px)
+}
+//first Item
+.main {
+    @include dynamicBackground(green, 100%, 612.39px);
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top:0;
+    // z-index: 1000;
+}
+//H 747
+.header {
+    @include dynamicBackground(#FEFAF2, 100%, 8.429em);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: inline-block;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 300;
+}
+
+.backgroundImage {
+    @include dynamicBackground(green, 100%, 100%);
+    // position: -webkit-sticky;
+    // position: sticky;
+    // top:34.09%;
+    object-fit: cover;
+    background-image: url('../img/Image1/image\ 211.png');
+    background-size: 100% 118%;
+    background-position: 0 -6.8em;
+    text-align: center;
+}
+//second Item
+.mainBody{
+    @include dynamicBackground($tHeaderBColor, 100%, 3208.78px);
+}
+
+// .building {
+//     @include gridAreaAll(building);
+//     @include dynamicBackground(blue, 100%, 300px)
+// }
+
+// .room {
+//     @include gridAreaAll(room);
+//     @include dynamicBackground(orange, 100%, 200px)
+// }
+
+// .food {
+//     @include gridAreaAll(food);
+//     @include dynamicBackground(yellow, 100%, 300px)
+// }
+
+// .visit {
+//     @include gridAreaAll(visit);
+//     @include dynamicBackground(red, 100%, 300px);
+//     ;
+
+// }
+
+// .moment {
+//     @include gridAreaAll(moment);
+//     @include dynamicBackground(green, 100%, 200px)
+// }
+
+// .goalAchieveMent {
+//     @include gridAreaAll(goalAchieveMent);
+//     @include dynamicBackground(blue, 100%, 200px)
+// }
+
+// .discount {
+//     @include gridAreaAll(discount);
+//     @include dynamicBackground(yellow, 100%, 200px)
+// }
+
+// .footer {
+//     @include gridAreaAll(footer);
+//     @include dynamicBackground(orange, 100%, 200px)
+// }

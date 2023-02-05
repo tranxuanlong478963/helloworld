@@ -1,0 +1,230 @@
+@use '../Mixin.scss' as *;
+@import '../Variable.scss';
+
+
+//First Item
+.textFirstContent{
+    @include dynamicBackground($tHeaderBColor, 58.15%,4.039%);
+    @include text(33.2px,"Times New Roman", red);
+    @include staticLocation(20.19%,5.55%,0,0);
+    @include customText(center,129.9%,33.2px,300,#051604);
+}
+.transparentImageFCDiv{
+    @include dynamicBackground(unset, 43.95%,15.419%);
+    @include staticLocation(27.39%,-2.09%,0,0);
+    @include customBackgroundImage('../../img/Image2/Vector.png',100%,100%,100%,100%);
+    // background-image: url('../../img/Image2/Vector.png');
+}
+.imgFC1{
+    @include dynamicBackground(unset,28.8%,12.95%);
+    @include staticLocation(12.19%,-2%,0,0);
+    @include customBackgroundImage('../../img/Image2/image357.png',103.9%,103.9%,-0.29em,0em);
+    // background-image: url('../../img/Image2/image357.png');
+    // background-size: 103.9%;
+    // background-position: -0.29em 0em;
+}
+.imgFC2{
+    @include dynamicBackground(unset,28.8%,12.95%);
+    @include staticLocation(50.08%,-19.78%,0,0);
+    @include customBackgroundImage('../../img/Image2/image.png',103.9%,102.9%,-0.39em,-0.75em);
+    // background-image: url('../../img/Image2/image.png');
+    // background-size: 103.9% 102.9%;
+    // background-position: -0.39em -0.75em;
+}
+
+//SecondItem
+
+//sub item1
+.textSC1{
+    @include dynamicBackground($tHeaderBColor,28.8%,0.68%);
+    @include staticLocation(35.38%,-12.69%,0,0);
+    @include customText(center,1.68em,13.28px,400,#6d6d6a);
+}
+
+.textSC2{
+    @include dynamicBackground(unset,43.99%,2.28%);
+    @include staticLocation(27.78%,-12.09%,0,0);
+    @include customText(center,1.38em,26.56px,300,#6d6d6a);
+}
+
+//sub item2
+
+
+//image1
+.imageSC1{
+    @include dynamicBackground($tHeaderBColor,51.6%,12.269%);
+    @include staticLocation(5.08%,-10.099%,0,0);
+    @include customBackgroundImage('../../img/Image3/img.png',103.9%,102.9%,-0.39em,-0.5em);
+    // background-image: url('../../img/Image3/img.png');
+    // background-size: 103.9% 102.9%;
+    // background-position: -0.39em -0.5em;
+}
+
+
+//containerBottom1
+.textImageSCDiv1{
+    @include dynamicBackground($tHeaderBColor,24.29%,2.369%);
+    @include staticLocation(5.08%,-21.5%,0,0);
+    @include customText(left,1.38em,26.56px,300,#191919);
+}
+//subBottomContainer
+.containerIcons{
+    @include dynamicBackground($tHeaderBColor,100%,35.29%);
+    @include staticLocation(0%,17.5%,0,0);
+}
+//additionPositionClass
+.addPosition1{
+    position: relative;
+    top:-100%;
+    left:29.29%;
+}
+.addPosition2{
+    position: relative;
+    top:-200%;
+    left:62.699%;
+}
+//listItem1
+.containerIconText1{
+    @include dynamicBackground($tHeaderBColor,68px,100%);
+}
+.containerIconItem1{
+    @include dynamicBackground(unset,27.29%,72.29%);
+    @include staticLocation(0%,16%,0,0);
+    @include customBackgroundImage('../../img/Image3/ArrowsOut.png',100%,100%, 0px,0px);
+    // background-image: url(../../img/Image3/ArrowsOut.png);
+    // background-position: -2.36em -0.539em;
+}
+.iconItemText1{
+    @include dynamicBackground(unset,72.99%,100%);
+    @include staticLocation(26.99%,-70.9%,0,0);
+    @include customText(right,1.29em,14.94px,400,#191919);
+}
+//list item 2
+.containerIconText2{
+    @include dynamicBackground($tHeaderBColor,80px,100%);
+}
+//W 27.28%
+.containerIconItem2{
+    @include dynamicBackground(unset,23.29%,72.29%);
+    @include staticLocation(0%,16%,0,0);
+    @include customBackgroundImage('../../img/Image3/Users.png',100%,100%, 0px,0px);
+    // background-image: url(../../img/Image3/ArrowsOut.png);
+    // background-position: -2.36em -0.539em;
+}
+.iconItemText2{
+    @include dynamicBackground(unset,72.99%,100%);
+    @include staticLocation(26.99%,-70.9%,0,0);
+    @include customText(right,1.9em,14.94px,400,#191919);
+}
+//listItem3
+.containerIconText3{
+    @include dynamicBackground($tHeaderBColor,108.8px,100%);
+}
+//37.28%
+.containerIconItem3{
+    @include dynamicBackground(unset,17.29%,72.29%);
+    @include staticLocation(0%,16%,0,0);
+    @include customBackgroundImage('../../img/Image3/Eye.png',100%,100%, 0px,0px);
+    // background-image: url(../../img/Image3/ArrowsOut.png);
+    // background-position: -2.36em -0.539em;
+}
+.iconItemText3{
+    @include dynamicBackground(unset,72.99%,100%);
+    @include staticLocation(26.99%,-70.9%,0,0);
+    @include customText(right,1.9em,14.94px,400,#191919);
+}
+.SCButton1{
+    @include dynamicBackground(#013779, 43.99%,3.39em);
+    @include staticLocation(168.8%,-488%,0,0);
+    @include customText(center,3.5em,11.62px,600,#e9eff7);
+}
+
+//image2
+.imageSC2{
+    @include dynamicBackground(white,51.6%,12.269%);
+    @include staticLocation(61.58%,-22.369%,0,0);
+    @include customBackgroundImage('../../img/Image3/Roomslider.png',75.9%,102.9%,-0.39em,-0.5em);
+//     background-image: url('../../img/Image3/Roomslider.png');
+//     background-size: 75.9% 102.9%;
+//     background-position: -0.39em -0.5em;
+}
+
+//containerBottom2
+.textImageSCDiv2{
+    @include dynamicBackground($tHeaderBColor,24.29%,2.369%);
+    @include staticLocation(61.58%,-23.859%,0,0);
+    @include customText(left,1.38em,26.56px,300,#191919);
+}
+
+//Third Item
+
+.thirdMainContainer{
+    @include dynamicBackground($tHeaderBColor,44.19%,4.709%);
+    @include staticLocation(27.9%,-20.8%,0,0);
+}
+.thirdMainItemText1{
+    @include dynamicBackground($tHeaderBColor,100%,14.29%);
+    @include customText(center,1em,13.28px,300,#191919)
+}
+.thirdMainItemText2{
+    @include dynamicBackground($tHeaderBColor,100%,72.29%);
+    @include customText(center,1.5em,26.56px,300,#191919);
+    @include staticLocation(0%,13.99%,0,0);
+}
+.thirdMainItemImageDiv{
+    @include dynamicBackground($tHeaderBColor,226%,329.59%);
+    @include staticLocation(-63%,47.99%,0,0);
+    // @include staticLocation(0%,0%,0,0);
+    //61.99%
+
+}
+.thirdMainItemImage1{
+    @include dynamicBackground($tHeaderBColor,49.9%,100%);
+    // @include staticLocation(0%,100%,0,0);
+    @include staticLocation(0%,0%,0,0);
+    @include customBackgroundImage('../../img/Image4/Ẩm\ thực\ section\ pic\ 1.png',100%,100%, 0px,0px);
+}
+.thirdMainItemImage2{
+    @include dynamicBackground($tHeaderBColor,49.9%,100%);
+    // @include staticLocation(0%,100%,0,0);
+    @include staticLocation(50%,-100%,0,0);
+    @include customBackgroundImage('../../img/Image4/Ẩm\ thực\ section\ pic\ 2.png',100%,100%, 0px,0px);
+}
+// last Item
+
+.lastContentMainDiv{
+    @include dynamicBackground(green,100%,14.19%);
+    @include staticLocation(0%,3.109%,0,0);
+}
+
+.lastContentText{
+    @include dynamicBackground($tHeaderBColor,43.9%,unset);
+    @include staticLocation(27.78%,0%,0,0);
+    @include customText(center,1.5em,26.56px,300,#5b5f66);
+}
+//H 16.19%
+.lastContentImageMain{
+    @include dynamicBackground($tHeaderBColor,89.29%,75.8%);
+    @include staticLocation(5%,8%,0,0);
+}
+.lastContentImageItem1{
+    @include dynamicBackground($tHeaderBColor,49.19%,99.9%);
+    background-image: url(../../img/Image5/I1/Offer.png);
+}
+.lastContentImageIcon1{
+    @include dynamicBackground(unset,12.59%,19.35%);
+    @include staticLocation(7.29%,40.9%,0,0);
+    background-image: url("../../img/Image5/I1/Ellipse\ 13.png");
+    background-size: 100% 100%;
+}
+.lastContentImageItem2{
+    @include dynamicBackground($tHeaderBColor,49.19%,99.9%);
+    @include staticLocation(51.39%,-100%,0,0);
+    background-image: url(../../img/Image5/I2/Offer-2.png);
+}
+.lastContentImageIcon2{
+    @include dynamicBackground(unset,12.59%,19.35%);
+    @include staticLocation(7.29%,40.9%,0,0);
+    background-image: url("../../img/Image5/I2/Ellipse\ 13.png");
+    background-size: 100% 100%;
+}

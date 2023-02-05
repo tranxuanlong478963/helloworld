@@ -1,0 +1,29 @@
+@use '../Mixin.scss' as *;
+@import '../Variable.scss';
+.trangChu:hover {
+    @include hoverEffect($navigationEColor);
+}
+.phongNghi:hover {
+    @include hoverEffect($navigationEColor);
+}
+.amThuc:hover {
+    @include hoverEffect($navigationEColor);
+}
+.dichVu:hover {
+    @include hoverEffect($navigationEColor);
+}
+.uuDai:hover {
+    @include hoverEffect($navigationEColor);
+}
+.tour:hover {
+    @include hoverEffect($navigationEColor);
+}
+.phuQuoc:hover {
+    @include hoverEffect($navigationEColor);
+}
+.thuVien:hover {
+    @include hoverEffect($navigationEColor);
+}
+.lienHe:hover {
+    @include hoverEffect($navigationEColor);
+}

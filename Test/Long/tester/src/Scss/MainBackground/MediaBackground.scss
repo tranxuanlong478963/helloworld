@@ -1,0 +1,48 @@
+
+@media only screen and ( max-width: 1175px){
+    .buttonSideBar{
+        top:48.8%;
+    }
+    .chatElement{
+        top:31.5%;
+    }
+}
+@media only screen and ( max-width: 843px){
+    .buttonSideBar{
+        top:37.6%;
+    }
+    .chatElement{
+        top:20.5%;
+    }
+}
+@media only screen and ( max-width: 595px){
+    .buttonSideBar{
+        top:25.5%;
+    }
+    .chatElement{
+        top:8.5%;
+    }
+}
+@media only screen and ( max-width: 581px){
+    .buttonSideBar{
+        top:41%;
+    }
+    .middleText{
+        font-size: 56px;
+    }
+    .chatElement{
+        top:23.5%;
+    }
+}
+// button trong botSideBar
+@media only screen and ( max-width: 860px){
+  .timPhongButton{
+    top:4.9%;
+  }
+}
+@media only screen and ( max-width: 745px){
+    .timPhongButton{
+      top:-2.09%;
+    }
+  }
+

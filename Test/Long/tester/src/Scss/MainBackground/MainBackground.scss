@@ -1,0 +1,92 @@
+@use '../Mixin.scss' as *;
+@use '../MainBackground/MainBackgroundMixin.scss' as *;
+.middleText{
+    @include staticLocation(31.69%,26.35%,0,0);
+    @include text(60px,"Times New Roman",#FFFFFF);
+    width: 42.69%;
+    font-weight: 300;
+    line-height: 1.19em;
+}
+.buttonSideBar{
+    @include dynamicBackground(#FAFCFF,64.65%,10.9%);
+    @include staticLocation(18%,60.5%,0,0);
+    text-align: left;
+}
+
+
+// item1
+ .containerOfTextAndIcon1{
+    @include containerOfTextAndIcon(1.6%,25%);
+}
+
+.mainButtonSideBarDiv1{
+    @include dynamicBackground(#FAFCFF,82.5%,100%);
+    display: inline-block;
+    text-align: left;
+}
+.mainIconImage1{
+    @include dynamicBackground(#ffffff,11.9%,75.46%);
+    @include staticLocation(5%,9%,0,0);
+}
+
+
+//item2
+.containerOfTextAndIcon2{
+    @include containerOfTextAndIcon(4.8%,25%);
+}
+.mainButtonSideBarDiv2{
+    @include dynamicBackground(#FAFCFF,82.5%,100%);
+    display: inline-block;
+    text-align: left;
+}
+.mainIconImage2{
+    @include dynamicBackground(#ffffff,11.9%,75.46%);
+    @include staticLocation(5%,9%,0,0);
+}
+
+
+// item3
+.containerOfTextAndIcon3{
+    @include containerOfTextAndIcon(8.09%,25%);
+}
+.mainButtonSideBarDiv3{
+    @include dynamicBackground(#FAFCFF,82.5%,100%);
+    display: inline-block;
+    text-align: left;
+}
+//W 82.5%
+.mainIconImage3{
+    @include dynamicBackground(#ffffff,11.9%,75.46%);
+    @include staticLocation(5%,9%,0,0);
+}
+
+// item4
+.containerOfTextAndIcon4{
+    @include containerOfTextAndIcon(11.5%,25%);
+}
+.mainButtonSideBarDiv4{
+    @include dynamicBackground(#FAFCFF,82.5%,100%);
+    display: inline-block;
+    text-align: left;
+}
+.mainIconImage4{
+    @include dynamicBackground(#ffffff,11.9%,75.46%);
+    @include staticLocation(5%,9%,0,0);
+}
+//button
+.timPhongButton{
+    @include dynamicBackground(#01377a,17.09%,59.49%);
+    @include staticLocation(17.45%,20.9%,0,0);
+    font-size: 11.62px;
+    color:#fafcff;
+}
+
+//chatElement
+.chatElement{
+    @include dynamicBackground(unset,5.99%,11.68%);
+    @include staticLocation(92.45%,43.5%,0,0);
+}
+.iconChatElement{
+    @include dynamicBackground(unset,69%,69%);
+    @include staticLocation(0%,12.9%,0,0);
+}

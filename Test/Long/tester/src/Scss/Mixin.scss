@@ -1,0 +1,56 @@
+@use "sass:string";
+@mixin customPaddingMargin($padding,$margin){
+    padding: $padding;
+    margin: $margin;
+}
+@mixin gridAreaAll($name) {
+    grid-area: $name;
+}
+
+@mixin dynamicBackground($bcolor, $width, $height) {
+    background-color: $bcolor;
+    width: $width;
+    height: $height;
+}
+
+@mixin staticLocation($left, $top, $right, $bottom) {
+    position: relative;
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+}
+
+@mixin text($fontSize, $fontFamily, $color) {
+    font-size: $fontSize;
+    font-family: unquote($fontFamily);
+    color: $color;
+}
+@mixin orderFontSizeMarginRLineH($order,$size,$marginR,$lineH){
+    order:$order;
+    font-size:$size;
+    margin-right: $marginR;
+    line-height:$lineH;
+}
+@mixin hoverEffect($color){
+    color:#20b0a9;
+}
+@mixin pointer{
+    cursor:pointer;
+}
+@mixin customText($textAlign,$lineHeight,$font-size,$font-weight,$color){
+    text-align: $textAlign;
+    line-height: $lineHeight;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+@mixin customBackgroundImage($backGImage,$backGISizeW,$backGISizeH,$backGIPositionX,$backGIPositionY){
+    background-image: url($backGImage);
+    background-size: $backGISizeW $backGISizeH;
+    background-position: $backGIPositionX $backGIPositionY;
+}
+// @mixin mediaSCDiv1TATop($textAlign,$top){
+//     text-align: $textAlign;
+//     top: $top;
+// }

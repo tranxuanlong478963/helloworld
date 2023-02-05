@@ -1,0 +1,161 @@
+@use '../Mixin.scss' as *;
+@import "../FontFamily.scss";
+@import '../Variable.scss';
+
+// main Container
+.topHeader {
+    @include dynamicBackground($tHeaderBColor, 100%, 68.5%);
+}
+
+//first child Container
+.firstLogoContainer {
+    @include dynamicBackground($tHeaderBColor, 10.15%, 79%);
+    @include staticLocation(44.719%, 9.09%, 0, 0);
+    text-align: center;
+    display: inline-block;
+}
+
+.topLogo {
+    @include dynamicBackground(none, 22.9%, 49.9%);
+    object-fit: fill;
+}
+
+.headerMiddleText {
+    @include text(13.46px, "'Times New Roman',Times, serif ", #003779);
+    @include customPaddingMargin(0px, 0px);
+    @include staticLocation(0, 15%, 0, 0);
+}
+
+.headerBottomText {
+    @include text(3.6px, "'Times New Roman', Times, serif", #003779);
+    @include customPaddingMargin(0px, 0px);
+    @include staticLocation(0, 19.8%, 0, 0);
+    @include dynamicBackground(#cac6be, 100%, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+//second child container
+.secondLogoContainer {
+    @include dynamicBackground($tHeaderBColor, 18.89%, 42.5%);
+    @include staticLocation(64.5%, -19.89%, 0, 0);
+    display: inline-flex;
+    flex: wrap row;
+}
+
+//1 div ngoai
+.languageSelection {
+    // @include dynamicBackground(green,100%,100%);
+    @include staticLocation(0, 21.9%, 0, 0);
+    overflow: visible;
+    order: 1;
+    align-self: start;
+}
+
+//1.1
+.selectTag {
+    @include dynamicBackground($tHeaderBColor, 100%, 1.6em);
+    font-size: 13.28px;
+    line-height: 165%;
+    cursor: pointer;
+    // appearance: menulist-button;
+    // border: none;
+}
+.languageVisibility{
+    visibility: hidden;
+}
+
+.langIcon{
+    width: 9.99%;
+    height: 38.5%;
+    position: relative;
+    left:19%;
+}
+
+//2
+.bookingButton {
+    @include dynamicBackground(#01377a, 55.5%, 100%);
+    @include text(14px, "'Times New Roman',Times, serif ", #fbfcff);
+    @include staticLocation(13.5%, 0, 0, 0);
+    font-size: 11.619px;
+    font-weight: 600px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 275.9%;
+    order: 2;
+    align-self: start;
+}
+
+.hrTag {
+    position: relative;
+    top: -3.09%;
+    z-index: 100;
+
+}
+
+//bottom header
+.navigationHeader {
+    @include dynamicBackground($tHeaderBColor, 58.69%, 14.5%);
+    @include staticLocation(20.39%, -3.09%, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 9.9%;
+    align-items: flex-start;
+}
+
+.capNaviItem {
+    background-color: $navigationEColor;
+    height: 5px;
+    border: none;
+    position: relative;
+    top: -10.9px;
+    z-index: 200;
+}
+
+.trangChu {
+    // @include dynamicBackground($tHeaderBColor,1em,1em);
+    @include orderFontSizeMarginRLineH(1, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.phongNghi {
+    // @include dynamicBackground($tHeaderBColor,1em,1em);
+    @include orderFontSizeMarginRLineH(2, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.amThuc {
+    @include orderFontSizeMarginRLineH(3, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.dichVu {
+    @include orderFontSizeMarginRLineH(4, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.uuDai {
+    @include orderFontSizeMarginRLineH(5, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.tour {
+    @include orderFontSizeMarginRLineH(6, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.phuQuoc {
+    @include orderFontSizeMarginRLineH(7, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.thuVien {
+    @include orderFontSizeMarginRLineH(8, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}
+
+.lienHe {
+    @include orderFontSizeMarginRLineH(9, $navigationSize, $marginR, $lineH);
+    @include pointer;
+}

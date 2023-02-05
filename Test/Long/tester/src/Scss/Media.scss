@@ -1,0 +1,19 @@
+@use './Mixin.scss' as *;
+@import './Variable.scss';
+//Header
+@media only screen and (max-width:1173px) {
+    .navigationHeader {
+        @include staticLocation(20.39%, -1.1em, 0, 0);
+    }
+
+    .capNaviItem {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width:1176px) {
+    .capNaviItem {
+        visibility: visible;
+        
+    }
+}
