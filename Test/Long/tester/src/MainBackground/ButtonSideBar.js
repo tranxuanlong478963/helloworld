@@ -2,7 +2,7 @@ import React from "react";
 import "../Scss/MainBackground/MediaBackground.scss";
 import gift from '../img/Image1/gift.png';
 import calendar from '../img/Image1/calendar.png';
-
+//second
 class ButtonSideBar extends React.Component {
     constructor() {
         super();
